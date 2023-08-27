@@ -64,9 +64,9 @@ let PhoneDetails = (details) => {
     let ShowDetailsContainer = document.getElementById("ShowDetailsContainer");
     ShowDetailsContainer.innerHTML = `
     <img src="${details.image}" class="mx-auto">
-    <p><span>Storage:</span>${details?.mainFeatures?.storage}</p>
-    <p><span>GPS:</span>${details.others?.GPS || 'No GPS available'}</p>
-    <p><span>GPS:</span>${details.others?.GPS ? details.others.GPS : 'No GPS available in this device'}</p>F
+    <p><span class="font-bold">Storage: </span>${details?.mainFeatures?.storage}</p>
+    <p><span class="font-bold">GPS: </span>${details.others?.GPS || 'No GPS available'}</p>
+    <p><span class="font-bold">GPS:</span>${details.others?.GPS ? details.others.GPS : 'No GPS available in this device'}</p>
     `;
 
 
