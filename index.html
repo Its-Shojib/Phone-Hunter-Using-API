@@ -37,30 +37,28 @@
             <p class="text-center text-[#706F6F] text-sm max-w-xl mx-auto">There are many variations of passages of
                 Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humou.</p>
             <p class="mx-auto text-center py-5"><button class="bg-blue-600 text-white px-4 py-2 rounded-lg">Buy
-                    Now</button></p> 
-            <div class="flex ">
-                <div class="max-w-sm max-h-[500px] mt-40"><img class="w-full h-full" src="./images/2.jpg" alt=""></div>
-                <div class="max-w-md max-h-[700px]"><img class="w-full h-full" src="./images/3.jpg" alt=""></div>
-                <div class="max-w-sm max-h-[500px] mt-40"><img class="w-full h-full" src="./images/2.jpg" alt=""></div>
+                    Now</button></p>
+            <div class="grid grid-cols-3">
+                <div class="mt-40"><img class="w-full h-full" src="./images/2.jpg" alt=""></div>
+                <div class=""><img class="w-full h-full" src="./images/3.jpg" alt=""></div>
+                <div class="mt-40"><img class="w-full h-full" src="./images/2.jpg" alt=""></div>
             </div>
         </section>
     </header>
     <main>
+        <!-- Search Option -->
         <section class="max-w-screen-xl bg-white mx-auto px-2 py-5 md:px-5 lg:px-10">
             <p class="text-center text-3xl font-bold">Search your phone</p>
-            <div class="max-w-[500px] bg-gray-200 rounded-lg text-center mx-auto px-4 my-5 ">
-                <span class="bg-gray-200 rounded-lg"><i class="fa-solid fa-magnifying-glass"></i>
-                    <input class="mx-auto py-4 outline-none bg-gray-200 w-9/12" type="text" name="" id="searchPhones"
-                        placeholder=" Search your phone"></span>
+            <div class="max-w-[500px]  text-center mx-auto px-4 my-5 ">
+                <input class="mx-auto py-4 px-2 rounded-lg outline-none bg-gray-200 w-9/12" type="text" name="" id="searchPhones" placeholder=" Search your phone">
                 <button onclick="Search()" class="bg-blue-600 text-white px-4 py-2 rounded-lg">Search</button>
             </div>
         </section>
+
+        <!-- Search Result -->
         <section class="max-w-screen-xl bg-white mx-auto px-2 py-5 md:px-5 lg:px-10">
-                <div id="container">
-                </div>
-
-
-
+            <div id="container">
+            </div>
         </section>
     </main>
     <footer></footer>
