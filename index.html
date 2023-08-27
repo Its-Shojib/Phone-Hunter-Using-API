@@ -9,16 +9,42 @@
     <!-- Tailwind & DaisyUi Cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        .poppins{
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
 </head>
 
-<body>
-    <header">
-        </header>
-        <main></main>
-        <footer></footer>
+<body class="bg-slate-300 min-h-screen poppins">
+    <header>
+        <section class="max-w-screen-xl min-h-screen bg-white mx-auto px-2 py-5 md:px-5 lg:px-10">
+            <h1 class="text-4xl font-bold text-center">Phone Hunter</h1>
+        </section>
+    </header>
+    <main>
+        <div class="card w-96 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+                <img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+                <h2 class="card-title">Shoes!</h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions">
+                    <button class="btn btn-primary">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
 
 
-        <script src="./js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
