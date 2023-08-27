@@ -38,10 +38,10 @@
                 Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humou.</p>
             <p class="mx-auto text-center py-5"><button class="bg-blue-600 text-white px-4 py-2 rounded-lg">Buy
                     Now</button></p>
-            <div class="grid grid-cols-3">
-                <div class="mt-40"><img class="w-full h-full" src="./images/2.jpg" alt=""></div>
-                <div class=""><img class="w-full h-full" src="./images/3.jpg" alt=""></div>
-                <div class="mt-40"><img class="w-full h-full" src="./images/2.jpg" alt=""></div>
+            <div class="grid grid-cols-3 lg:px-60">
+                <div class="mt-40 h-[350px]"><img class=" h-full" src="./images/2.jpg" alt=""></div>
+                <div class="h-[550px]"><img class=" h-full" src="./images/3.jpg" alt=""></div>
+                <div class="mt-40 h-[350px]"><img class=" h-full" src="./images/2.jpg" alt=""></div>
             </div>
         </section>
     </header>
@@ -57,7 +57,14 @@
 
         <!-- Search Result -->
         <section class="max-w-screen-xl bg-white mx-auto px-2 py-5 md:px-5 lg:px-10">
+            <div id="loading-spinner" class="text-center hidden my-40">
+                <span class="loading loading-spinner loading-lg"></span>
+            </div>
             <div id="container">
+            </div>
+            <!-- Show ALL -->
+            <div id="showAll" class="hidden text-center">
+                <button onclick="ShowAll()" class="bg-blue-600 text-white px-4 py-2 rounded-lg">Show All</button>
             </div>
         </section>
     </main>
